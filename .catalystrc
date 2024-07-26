@@ -1,0 +1,36 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "5712000000108020",
+      "name": "prod",
+      "domain": {
+        "id": "1010377985",
+        "name": "prod-73768316.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "73768316",
+          "name": "Development",
+          "type": 3
+        },
+        {
+          "idx": 2,
+          "id": "1014427306",
+          "name": "Production",
+          "type": 1
+        }
+      ]
+    }
+  ]
+}

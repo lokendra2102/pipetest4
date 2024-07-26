@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        // {
+        //     "type": "node",
+        //     "request": "attach",
+        //     "name": "nodetuncron",
+        //     "port": 9000,
+        //     "address": "localhost"
+        // },
+        {
+            "name": "nodetuncron", 
+            "type": "node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 9000,
+            "localRoot": "/Users/loke-18283/personl/tun/functions/crontun",
+            "timeout": 900000
+        },
+        {
+            "name": "nodetunevent", 
+            "type": "node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 9000,
+            "localRoot": "/Users/loke-18283/personl/tun/functions/nodeeventtun"
+        },
+        {
+            "name": "nodeintegcliqtun", 
+            "type": "node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 9000,
+            "localRoot": "/Users/loke-18283/personl/tun/functions/nodeintegcrontun"
+        },
+        {
+            "name": "javacron", 
+            "type": "node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 9000,
+            "localRoot": "/Users/loke-18283/personl/tun/functions/Tes"
+        },
+    ]
+}

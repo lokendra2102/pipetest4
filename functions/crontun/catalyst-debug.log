@@ -1,0 +1,67 @@
+[debug] [2023-12-07T09:21:38.146Z] : 
+[debug] [2023-12-07T09:21:38.158Z] : ----------------------------------------------------------------------
+[debug] [2023-12-07T09:21:38.158Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst functions:shell --tunnel 8000 --http 9000
+[debug] [2023-12-07T09:21:38.159Z] : CLI Version:  1.16.0
+[debug] [2023-12-07T09:21:38.159Z] : Platform:     darwin
+[debug] [2023-12-07T09:21:38.160Z] : Node Version: v20.5.1
+[debug] [2023-12-07T09:21:38.160Z] : Time:         Thu Dec 07 2023 14:51:38 GMT+0530 (India Standard Time)
+[debug] [2023-12-07T09:21:38.160Z] : ----------------------------------------------------------------------
+[debug] [2023-12-07T09:21:38.161Z] : 
+[debug] [2023-12-07T09:21:39.249Z] : > authorizing via signed-in user option
+[debug] [2023-12-07T09:21:39.250Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE"]
+[debug] [2023-12-07T09:21:39.268Z] : >>>> HTTP REQUEST : GET https://console.catalyst.localzoho.com/baas/v1/project/5712000000108020 
+
+[debug] [2023-12-07T09:21:40.196Z] : <<<< HTTP RESPONSE : 502
+Response Headers: {"server":"ZGS","date":"Thu, 07 Dec 2023 09:21:40 GMT","content-type":"text/html","content-length":"2322","connection":"keep-alive","etag":"\"64546e62-912\""}
+
+[debug] [2023-12-07T09:21:40.198Z] : Response Body : "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>Zoho - Temporarily Unavailable</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//img.zohostatic.com/images/lb/images/style.css\" />\n<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>\n<script type=\"text/javascript\">\n\tfunction scrollBasedFooter(){\n\t\tvar windowHeight = window.innerHeight;\n\t\tif( typeof( window.innerWidth ) !== 'number' ) {\n\t\t\tif( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {\n\t\t\t    windowHeight = document.documentElement.clientHeight;\n\t\t\t}\n\t\t\telse if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {\n\t\t\t    windowHeight = document.body.clientHeight;\n\t\t\t}\n\t\t}\n\t\tvar hasVScroll = document.body.scrollHeight > windowHeight;\n\t\tif(hasVScroll){\n\t\t\tdocument.getElementById(\"page-content\").appendChild( document.getElementById(\"footer-container\") );\n\t\t}\n\t}\n</script>\n</head>\n<body onLoad=\"scrollBasedFooter()\">\n<div class=\"mainContainer\" id=\"page-content\">\t\n<div class=\"logo\"><img src=\"//img.zohostatic.com/images/lb/images/logo_zoho.png\" alt=\"Zoho\"></div>\n<div class=\"content\">\n<div class=\"imgSetting\">\n<img src=\"//img.zohostatic.com/images/lb/images/icon_setting.png\" alt=\"Icon\">\n</div>\n<div class=\"textArea\">\n<h1>We'll be right back!</h1>\n<h2>Our service is temporarily unavailable. We are currently working to restore it.</h2>\n<h3>Please try again later.</h3>\n</div>\n<div class=\"contentBottom\"><span style=\"padding-right:5px; padding-top:3px;\">You can stay in touch with us via</span>\n<span><a href=\"http://www.facebook.com/zoho\" target=\"_blank\"><img src=\"//img.zohostatic.com/images/lb/images/icon_facebook.png\" alt=\"Facebook\" /></a></span>\n<span><a href=\"https://twitter.com/zoho\" target=\"_blank\"><img src=\"//img.zohostatic.com/images/lb/images/icon_twitter.png\" alt=\"Twitter\" /></a></span></div>\n</div>\n</div>\n<div class=\"footer\" id=\"footer-container\"> &copy; <script>document.write(new Date().getFullYear())</script>, <span class=\"textzoho\">ZOHO Corp.</span> All rights reserved.</div>\n</body>\n</html>\n"
+
+[error] [2023-12-07T09:21:40.205Z] : ✖ HTTP Error: 502, Unknown Error
+[debug] [2023-12-07T09:21:40.205Z] : Error Stack: CatalystError: HTTP Error: 502, Unknown Error
+    at exports.default (/usr/local/lib/node_modules/zcatalyst-cli/lib/errorResponse.js:25:12)
+    at API._parseResponse (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:142:60)
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:223:38)
+    at Generator.next (<anonymous>)
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:27:12)
+    at Request.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:221:53)
+    at Request.emit (node:events:526:35)
+    at Request.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/request/request.js:1154:10)
+[debug] [2023-12-07T09:21:40.205Z] : Error Context: {
+  "body": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>Zoho - Temporarily Unavailable</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//img.zohostatic.com/images/lb/images/style.css\" />\n<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>\n<script type=\"text/javascript\">\n\tfunction scrollBasedFooter(){\n\t\tvar windowHeight = window.innerHeight;\n\t\tif( typeof( window.innerWidth ) !== 'number' ) {\n\t\t\tif( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {\n\t\t\t    windowHeight = document.documentElement.clientHeight;\n\t\t\t}\n\t\t\telse if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {\n\t\t\t    windowHeight = document.body.clientHeight;\n\t\t\t}\n\t\t}\n\t\tvar hasVScroll = document.body.scrollHeight > windowHeight;\n\t\tif(hasVScroll){\n\t\t\tdocument.getElementById(\"page-content\").appendChild( document.getElementById(\"footer-container\") );\n\t\t}\n\t}\n</script>\n</head>\n<body onLoad=\"scrollBasedFooter()\">\n<div class=\"mainContainer\" id=\"page-content\">\t\n<div class=\"logo\"><img src=\"//img.zohostatic.com/images/lb/images/logo_zoho.png\" alt=\"Zoho\"></div>\n<div class=\"content\">\n<div class=\"imgSetting\">\n<img src=\"//img.zohostatic.com/images/lb/images/icon_setting.png\" alt=\"Icon\">\n</div>\n<div class=\"textArea\">\n<h1>We'll be right back!</h1>\n<h2>Our service is temporarily unavailable. We are currently working to restore it.</h2>\n<h3>Please try again later.</h3>\n</div>\n<div class=\"contentBottom\"><span style=\"padding-right:5px; padding-top:3px;\">You can stay in touch with us via</span>\n<span><a href=\"http://www.facebook.com/zoho\" target=\"_blank\"><img src=\"//img.zohostatic.com/images/lb/images/icon_facebook.png\" alt=\"Facebook\" /></a></span>\n<span><a href=\"https://twitter.com/zoho\" target=\"_blank\"><img src=\"//img.zohostatic.com/images/lb/images/icon_twitter.png\" alt=\"Twitter\" /></a></span></div>\n</div>\n</div>\n<div class=\"footer\" id=\"footer-container\"> &copy; <script>document.write(new Date().getFullYear())</script>, <span class=\"textzoho\">ZOHO Corp.</span> All rights reserved.</div>\n</body>\n</html>\n",
+  "response": {
+    "statusCode": 502,
+    "body": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>Zoho - Temporarily Unavailable</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//img.zohostatic.com/images/lb/images/style.css\" />\n<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>\n<script type=\"text/javascript\">\n\tfunction scrollBasedFooter(){\n\t\tvar windowHeight = window.innerHeight;\n\t\tif( typeof( window.innerWidth ) !== 'number' ) {\n\t\t\tif( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {\n\t\t\t    windowHeight = document.documentElement.clientHeight;\n\t\t\t}\n\t\t\telse if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {\n\t\t\t    windowHeight = document.body.clientHeight;\n\t\t\t}\n\t\t}\n\t\tvar hasVScroll = document.body.scrollHeight > windowHeight;\n\t\tif(hasVScroll){\n\t\t\tdocument.getElementById(\"page-content\").appendChild( document.getElementById(\"footer-container\") );\n\t\t}\n\t}\n</script>\n</head>\n<body onLoad=\"scrollBasedFooter()\">\n<div class=\"mainContainer\" id=\"page-content\">\t\n<div class=\"logo\"><img src=\"//img.zohostatic.com/images/lb/images/logo_zoho.png\" alt=\"Zoho\"></div>\n<div class=\"content\">\n<div class=\"imgSetting\">\n<img src=\"//img.zohostatic.com/images/lb/images/icon_setting.png\" alt=\"Icon\">\n</div>\n<div class=\"textArea\">\n<h1>We'll be right back!</h1>\n<h2>Our service is temporarily unavailable. We are currently working to restore it.</h2>\n<h3>Please try again later.</h3>\n</div>\n<div class=\"contentBottom\"><span style=\"padding-right:5px; padding-top:3px;\">You can stay in touch with us via</span>\n<span><a href=\"http://www.facebook.com/zoho\" target=\"_blank\"><img src=\"//img.zohostatic.com/images/lb/images/icon_facebook.png\" alt=\"Facebook\" /></a></span>\n<span><a href=\"https://twitter.com/zoho\" target=\"_blank\"><img src=\"//img.zohostatic.com/images/lb/images/icon_twitter.png\" alt=\"Twitter\" /></a></span></div>\n</div>\n</div>\n<div class=\"footer\" id=\"footer-container\"> &copy; <script>document.write(new Date().getFullYear())</script>, <span class=\"textzoho\">ZOHO Corp.</span> All rights reserved.</div>\n</body>\n</html>\n",
+    "headers": {
+      "server": "ZGS",
+      "date": "Thu, 07 Dec 2023 09:21:40 GMT",
+      "content-type": "text/html",
+      "content-length": "2322",
+      "connection": "keep-alive",
+      "etag": "\"64546e62-912\""
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "console.catalyst.localzoho.com",
+        "port": 443,
+        "hostname": "console.catalyst.localzoho.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/baas/v1/project/5712000000108020",
+        "path": "/baas/v1/project/5712000000108020",
+        "href": "https://console.catalyst.localzoho.com/baas/v1/project/5712000000108020"
+      },
+      "method": "GET"
+    }
+  }
+}
+[debug] [2023-12-07T09:21:40.206Z] : Error Status: 502
+[info] [2023-12-07T09:21:40.206Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2023-12-07T09:21:40.206Z] : EXEC ENDED with event: Error (Unexpected), message: HTTP Error: 502, Unknown Error
+[debug] [2023-12-07T09:21:40.206Z] : TOTAL DURATION OF COMMAND EXEC : 971
+[debug] [2023-12-07T09:21:40.208Z] : Unable to initialise the log API

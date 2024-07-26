@@ -1,0 +1,23 @@
+{
+  "functions": {
+    "targets": [
+      "crontun",
+      "nodeeventtun",
+      "nodeintegcrontun",
+      "cronjava",
+      "cronpython",
+      "ll",
+      "asd",
+      "CronIntegration",
+      "cronintegrationnode",
+      "CronIntegrationPython",
+      "IntegrationPython",
+      "integrationnode",
+      "IntegrationJava"
+    ],
+    "ignore": [
+      ".output"
+    ],
+    "source": "functions"
+  }
+}
