@@ -13,7 +13,7 @@ def handler(event, context):
     source_entity_id = event.get_source_entity_id()
     event_bus_details = event.get_event_bus_details()
     project_details = event.get_project_details()
-
+   
     '''Context Functionalities'''
     # remaining_execution_time_ms = context.get_remaining_execution_time_ms()
     # max_execution_time_ms = context.get_max_execution_time_ms()
